@@ -1,5 +1,13 @@
 function sumMul(n,m){
-    //your idea here
+    let cnt = 0;
+    if (m <= 0){
+        return "INVALID"
+    } else {
+        for(let i = 0; (i*n)< m; i++){
+            cnt +=i*n
+        }
+    }
+    return cnt
 }
 
 console.log(sumMul(0,0)); // "INVALID"
